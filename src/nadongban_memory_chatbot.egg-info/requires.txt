@@ -1,0 +1,5 @@
+Flask<4,>=3.1
+openai<3,>=2.0
+python-dotenv<2,>=1.0
+pinecone<8,>=7.0
+waitress<4,>=3.0

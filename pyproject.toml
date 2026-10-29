@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nadongban-memory-chatbot"
+version = "1.0.0"
+description = "A time-aware long-term memory chatbot built with Flask, OpenAI, embeddings, and local vector search."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "Flask>=3.1,<4",
+  "openai>=2.0,<3",
+  "python-dotenv>=1.0,<2",
+  "pinecone>=7.0,<8",
+  "waitress>=3.0,<4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
